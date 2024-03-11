@@ -5,7 +5,7 @@ class Config {
 
     // Calculation - Fullscreen -> Get windowInnerWidth/Height as resolution and inch of screen. Then calculate the ppi
     // PPI cannot be determined by plain javascript
-    static ppi = 264.68;       // Determines proper size of elements (so that 1cm equals 1cm on every phone //Laptop: 141.21, Ipad: 264.68
+    static ppi = 97.35;       // Determines proper size of elements (so that 1cm equals 1cm on every phone //Laptop: 141.21, Ipad: 264.68
     static shape = "rectangle"; // rectangle or circle (circle not adjusted)
     static intDevice = "touch".toLowerCase(); // Mouse, Touch (when touch enabled, mouseclick will not work) //mouse for laptop or touch
     static trialsPerBreakTestSet = 36;
