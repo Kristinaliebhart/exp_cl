@@ -25,30 +25,39 @@ class DataRecorder {
         return this.dataArray;
     }
 
- generateCsvDownloadLink(isDownload) {
-        const csvContent = this.dataArray.map(row => row.join(',')).join('\n');
-        const blob = new Blob([csvContent], {type: 'text/csv'});
-        const url = URL.createObjectURL(blob);
+generateCsvDownloadLink(isDownload) {
+    const csvContent = this.dataArray.map(row => row.join(',')).join('\n');
+    const blob = new Blob([csvContent], {type: 'text/csv'});
+    const url = URL.createObjectURL(blob);
 
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'data.csv';
-        link.textContent = 'Download CSV';
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'data.csv';
 
-        this.printDownloadableCsvFileToConsole(link)
-        if (isDownload) this.downloadGeneratedCsvFile(link);
+    // Entfernt die Zeile, die den Link zum Dokumentenkörper hinzufügt
+    // this.printDownloadableCsvFileToConsole(link);
+
+    if (isDownload) {
+        // Führt den Download durch, ohne den Link zum Dokumentenkörper hinzuzufügen
+        link.style.display = 'none'; // Versteckt den Link
+        document.body.appendChild(link); // Fügt den Link hinzu, um den Download zu ermöglichen
+        link.click(); // Simuliert einen Klick auf den Link
+        document.body.removeChild(link); // Entfernt den Link sofort wieder
     }
+}
 
+// Diese Methode kann entfernt werden, wenn Sie nicht mehr benötigt wird
+printDownloadableCsvFileToConsole(link) {
+    console.log('CSV Download Link:', link.href);
+}
+    
     downloadGeneratedCsvFile(link) {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     }
 
-    printDownloadableCsvFileToConsole(link) {
-        document.body.appendChild(link);
-        console.log(link);
-    }
+ 
 
     publishCsvToServer() {
         const jsonData = this.dataArray.map(row => row.join(',')).join('\n');
