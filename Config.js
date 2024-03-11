@@ -28,10 +28,10 @@ class Config {
 
     // Trial Config - Random Placement (in mm)
     static randomTrialPlacement = true;                // Determines if the trials will be placed on random positions of the canvas or in the middle
-    static randomTrialPlacementToleranceXLeft = 5;     // Determines how much the element has to be away from the left canvas width (X) border
-    static randomTrialPlacementToleranceXRight = 5;    // Determines how much the element has to be away from the right canvas width (X) border
-    static randomTrialPlacementToleranceYUp = 15;       // Determines how much the element has to be away from the up canvas height (Y) border
-    static randomTrialPlacementToleranceYDown = 10;     // Determines how much the element has to be away from the down canvas height (Y) border
+    static randomTrialPlacementToleranceXLeft = 3;     // Determines how much the element has to be away from the left canvas width (X) border
+    static randomTrialPlacementToleranceXRight = 3;    // Determines how much the element has to be away from the right canvas width (X) border
+    static randomTrialPlacementToleranceYUp = 3;       // Determines how much the element has to be away from the up canvas height (Y) border
+    static randomTrialPlacementToleranceYDown = 3;     // Determines how much the element has to be away from the down canvas height (Y) border
 
     // Debug Flags
     static isDebug = false;                         // Enables more detailed logging
@@ -88,10 +88,10 @@ class Config {
     ];
 
     static trialsDataCategoriesTrainingsSet = [
-        ["C1", 4, 20, 155, 'right'],
-        ["C34", 5, 14, 52, 'left-down'],
-        ["C20", 8, 16, 103, 'down'],
-        ["C12", 5, 18, 155, 'right'],
+        ["C1", 4, 20, 150, 'right'],
+        ["C34", 5, 14, 5ß, 'left-down'],
+        ["C20", 8, 16, 100, 'down'],
+        ["C12", 5, 18, 150, 'right'],
     ];
     // Predefined Clock: 12 (up), 1 (up-right), 2 (right-up), 3 (right), 4 ...
     // Can be extended
