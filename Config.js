@@ -14,7 +14,7 @@ class Config {
     static version = "8.4";
 
     // Trial Config
-    static showLessScreenInformation = false;           // Shows more/less detailed trial/block information on the screen
+    static showLessScreenInformation = true;           // Shows more/less detailed trial/block information on the screen
     static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
     static numBlocksTestSet = 6;                        // Amount of blocks for test set
     static numBlocksTrainingsSet = 2;                   // Amount of blocks for trainings set
@@ -89,7 +89,7 @@ class Config {
 
     static trialsDataCategoriesTrainingsSet = [
         ["C1", 4, 20, 150, 'right'],
-        ["C34", 5, 14, 5ß, 'left-down'],
+        ["C34", 5, 14, 50, 'left-down'],
         ["C20", 8, 16, 100, 'down'],
         ["C12", 5, 18, 150, 'right'],
     ];
