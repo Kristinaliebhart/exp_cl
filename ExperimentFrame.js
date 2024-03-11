@@ -73,20 +73,28 @@ class ExperimentFrame {
     }
 
     // Function to display the finish window
-    displayFinishWindow() {
-        const finishWindow = document.getElementById('finishWindow');
-        finishWindow.style.display = 'block'; //show modal
-        // Disable the rest of the page interaction while the break window is visible
-        document.body.style.pointerEvents = 'none';
+   // Funktion, die das Abschlussfenster anzeigt
+displayFinishWindow() {
+    const finishWindow = document.getElementById('finishWindow');
+    finishWindow.style.display = 'block'; // Zeigt das Modal an
+    // Deaktiviert die Interaktion mit dem Rest der Seite, während das Abschlussfenster angezeigt wird
+    document.body.style.pointerEvents = 'none';
 
-        const downloadDataButton = document.getElementById('downloadDataButton');
+    const downloadDataButton = document.getElementById('downloadDataButton');
 
-        // Event listener for the finish button
-        downloadDataButton.addEventListener('click', () => {
-            this.dataRecorder.generateCsvDownloadLink(true);
-            location.reload();
-        });
+    // Event-Listener für den Download-Button
+    downloadDataButton.addEventListener('click', () => {
+        this.dataRecorder.generateCsvDownloadLink(true);
+        // Nach dem Download die Seite neu laden oder zu einer anderen Seite weiterleiten
+        location.reload();
+    });
+
+    // Überprüfen, ob der Text "You finished" im Modal vorhanden ist, und dann automatisch den Download starten
+    if(finishWindow.innerText.includes("You finished")) {
+        downloadDataButton.click();
     }
+}
+
 
     trialCompleted() {
         const currentBlock = this.experiment.getBlock(this.blockNumber);
