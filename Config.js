@@ -31,7 +31,7 @@ class Config {
     static randomTrialPlacementToleranceXLeft = 5;     // Determines how much the element has to be away from the left canvas width (X) border
     static randomTrialPlacementToleranceXRight = 5;    // Determines how much the element has to be away from the right canvas width (X) border
     static randomTrialPlacementToleranceYUp = 15;       // Determines how much the element has to be away from the up canvas height (Y) border
-    static randomTrialPlacementToleranceYDown = 5;     // Determines how much the element has to be away from the down canvas height (Y) border
+    static randomTrialPlacementToleranceYDown = 10;     // Determines how much the element has to be away from the down canvas height (Y) border
 
     // Debug Flags
     static isDebug = false;                         // Enables more detailed logging
@@ -46,44 +46,44 @@ class Config {
     // (e.g. when the first trial got a miss, the counter will be also incremented for the other trial)
      static trialsDataCategoriesTestSet = [
        //amplitude 1
-        ["C1", 4, 20, 155, 'right'],
-        ["C2", 15, 6, 155, 'up'],
-        ["C3", 9, 15, 155, 'up-right'],
-        ["C4", 10, 8, 155, 'up'],
-        ["C5", 7, 7, 155, 'right-up'],
-        ["C6", 15, 18, 155, 'up-right'],
-        ["C7", 16, 10, 155, 'right-up'],
-        ["C8", 8, 16, 155, 'right'],
-        ["C9", 24, 10, 155, 'up'],
-        ["C10", 5, 14, 155, 'right'],
-        ["C11", 16, 5, 155, 'right-up'],
-        ["C12", 5, 18, 155, 'right'],
+        ["C1", 4, 20, 150, 'right'],
+        ["C2", 15, 6, 150, 'up'],
+        ["C3", 9, 15, 150, 'up-right'],
+        ["C4", 10, 8, 150, 'up'],
+        ["C5", 7, 7, 150, 'right-up'],
+        ["C6", 15, 18, 150, 'up-right'],
+        ["C7", 16, 10, 150, 'right-up'],
+        ["C8", 8, 16, 150, 'right'],
+        ["C9", 24, 10, 150, 'up'],
+        ["C10", 5, 14, 150, 'right'],
+        ["C11", 16, 5, 150, 'right-up'],
+        ["C12", 5, 18, 150, 'right'],
         //amplitude 2
-        ["C13", 4, 20, 103, 'down-left'],
-        ["C14", 15, 6, 103, 'right-down'],
-        ["C15", 9, 15, 103, 'down-left'],
-        ["C16", 10, 8, 103, 'right-down'],
-        ["C17", 7, 7, 103, 'down-right'],
-        ["C18", 15, 18, 103, 'right-down'],
-        ["C19", 16, 10, 103, 'down'],
-        ["C20", 8, 16, 103, 'down'],
-        ["C21", 24, 10, 103, 'right-down'],
-        ["C22", 5, 14, 103, 'down'],
-        ["C23", 16, 5, 103, 'down-left'],
-        ["C24", 5, 18, 103, 'right-down'],
+        ["C13", 4, 20, 100, 'down-left'],
+        ["C14", 15, 6, 100, 'right-down'],
+        ["C15", 9, 15, 100, 'down-left'],
+        ["C16", 10, 8, 100, 'right-down'],
+        ["C17", 7, 7, 100, 'down-right'],
+        ["C18", 15, 18, 100, 'right-down'],
+        ["C19", 16, 10, 100, 'down'],
+        ["C20", 8, 16, 100, 'down'],
+        ["C21", 24, 10, 100, 'right-down'],
+        ["C22", 5, 14, 100, 'down'],
+        ["C23", 16, 5, 100, 'down-left'],
+        ["C24", 5, 18, 100, 'right-down'],
         //amplitude 3
-        ["C25", 4, 20, 52, 'left'],
-        ["C26", 15, 6, 52, 'left-up'],
-        ["C3", 9, 15, 52, 'left'],
-        ["C28", 10, 8, 52, 'up-left'],
-        ["C29", 7, 7, 52, 'left'],
-        ["C30", 15, 18, 52, 'left-down'],
-        ["C31", 16, 10, 52, 'left-up'],
-        ["C32", 8, 16, 52, 'up-left'],
-        ["C33", 24, 10, 52, 'left-up'],
-        ["C34", 5, 14, 52, 'left-down'],
-        ["C35", 16, 5, 52, 'up-left'],
-        ["C36", 5, 18, 52, 'left']
+        ["C25", 4, 20, 50, 'left'],
+        ["C26", 15, 6, 50, 'left-up'],
+        ["C3", 9, 15, 50, 'left'],
+        ["C28", 10, 8, 50, 'up-left'],
+        ["C29", 7, 7, 50, 'left'],
+        ["C30", 15, 18, 50, 'left-down'],
+        ["C31", 16, 10, 50, 'left-up'],
+        ["C32", 8, 16, 50, 'up-left'],
+        ["C33", 24, 10, 50, 'left-up'],
+        ["C34", 5, 14, 50, 'left-down'],
+        ["C35", 16, 5, 50, 'up-left'],
+        ["C36", 5, 18, 50, 'left']
        
     ];
 
