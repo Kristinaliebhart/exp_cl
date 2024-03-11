@@ -14,7 +14,7 @@ class Config {
     static version = "8.4";
 
     // Trial Config
-    static showLessScreenInformation = false;           // Shows more/less detailed trial/block information on the screen
+    static showLessScreenInformation = true;           // Shows more/less detailed trial/block information on the screen
     static isTestSet = false;                           // Determines, if test or trainings set will be used for trials
     static numBlocksTestSet = 6;                        // Amount of blocks for test set
     static numBlocksTrainingsSet = 2;                   // Amount of blocks for trainings set
@@ -44,56 +44,55 @@ class Config {
     // Category, targetWidth, targetHeight, Amplitude, trialDirection (e.g. up -> target is above start element)
     // Note: When adding the same Trial Category, the Trials will be treated as the same
     // (e.g. when the first trial got a miss, the counter will be also incremented for the other trial)
-    static trialsDataCategoriesTestSet = [
+     static trialsDataCategoriesTestSet = [
        //amplitude 1
-        ["C1", 4, 20, 160, 'right'],
-        ["C2", 15, 6, 160, 'up'],
-        ["C3", 9, 15, 160, 'up-right'],
-        ["C4", 10, 8, 160, 'up'],
-        ["C5", 7, 7, 160, 'right-up'],
-        ["C6", 15, 18, 160, 'up-right'],
-        ["C7", 16, 10, 160, 'right-up'],
-        ["C8", 8, 16, 160, 'right'],
-        ["C9", 24, 10, 160, 'up'],
-        ["C10", 5, 14, 160, 'right'],
-        ["C11", 16, 5, 160, 'right-up'],
-        ["C12", 5, 18, 160, 'up'],
+        ["C1", 4, 20, 155, 'right'],
+        ["C2", 15, 6, 155, 'up'],
+        ["C3", 9, 15, 155, 'up-right'],
+        ["C4", 10, 8, 155, 'up'],
+        ["C5", 7, 7, 155, 'right-up'],
+        ["C6", 15, 18, 155, 'up-right'],
+        ["C7", 16, 10, 155, 'right-up'],
+        ["C8", 8, 16, 155, 'right'],
+        ["C9", 24, 10, 155, 'up'],
+        ["C10", 5, 14, 155, 'right'],
+        ["C11", 16, 5, 155, 'right-up'],
+        ["C12", 5, 18, 155, 'right'],
         //amplitude 2
-        ["C13", 4, 20, 107, 'down-left'],
-        ["C14", 15, 6, 107, 'right-down'],
-        ["C15", 9, 15, 107, 'down-left'],
-        ["C16", 10, 8, 107, 'right-down'],
-        ["C17", 7, 7, 107, 'down-right'],
-        ["C18", 15, 18, 107, 'right-down'],
-        ["C19", 16, 10, 107, 'down'],
-        ["C20", 8, 16, 107, 'down'],
-        ["C21", 24, 10, 107, 'right-down'],
-        ["C22", 5, 14, 107, 'down'],
-        ["C23", 16, 5, 107, 'down-left'],
-        ["C24", 5, 18, 107, 'right-down'],
+        ["C13", 4, 20, 103, 'down-left'],
+        ["C14", 15, 6, 103, 'right-down'],
+        ["C15", 9, 15, 103, 'down-left'],
+        ["C16", 10, 8, 103, 'right-down'],
+        ["C17", 7, 7, 103, 'down-right'],
+        ["C18", 15, 18, 103, 'right-down'],
+        ["C19", 16, 10, 103, 'down'],
+        ["C20", 8, 16, 103, 'down'],
+        ["C21", 24, 10, 103, 'right-down'],
+        ["C22", 5, 14, 103, 'down'],
+        ["C23", 16, 5, 103, 'down-left'],
+        ["C24", 5, 18, 103, 'right-down'],
         //amplitude 3
-        ["C25", 4, 20, 53, 'left'],
-        ["C26", 15, 6, 53, 'left-up'],
-        ["C3", 9, 15, 53, 'left'],
-        ["C28", 10, 8, 53, 'up-left'],
-        ["C29", 7, 7, 53, 'left'],
-        ["C30", 15, 18, 53, 'left-down'],
-        ["C31", 16, 10, 53, 'left-up'],
-        ["C32", 8, 16, 53, 'up-left'],
-        ["C33", 24, 10, 53, 'left-up'],
-        ["C34", 5, 14, 53, 'left-down'],
-        ["C35", 16, 5, 53, 'up-left'],
-        ["C36", 5, 18, 53, 'left']
+        ["C25", 4, 20, 52, 'left'],
+        ["C26", 15, 6, 52, 'left-up'],
+        ["C3", 9, 15, 52, 'left'],
+        ["C28", 10, 8, 52, 'up-left'],
+        ["C29", 7, 7, 52, 'left'],
+        ["C30", 15, 18, 52, 'left-down'],
+        ["C31", 16, 10, 52, 'left-up'],
+        ["C32", 8, 16, 52, 'up-left'],
+        ["C33", 24, 10, 52, 'left-up'],
+        ["C34", 5, 14, 52, 'left-down'],
+        ["C35", 16, 5, 52, 'up-left'],
+        ["C36", 5, 18, 52, 'left']
        
     ];
 
     static trialsDataCategoriesTrainingsSet = [
-        ["C1", 4, 20, 160, 'right'],
-        ["C34", 5, 14, 53, 'left-down'],
-        ["C20", 8, 16, 107, 'down'],
-        ["C12", 5, 18, 160, 'up'],
+        ["C1", 4, 20, 155, 'right'],
+        ["C34", 5, 14, 52, 'left-down'],
+        ["C20", 8, 16, 103, 'down'],
+        ["C12", 5, 18, 155, 'right'],
     ];
-
     // Predefined Clock: 12 (up), 1 (up-right), 2 (right-up), 3 (right), 4 ...
     // Can be extended
     static clockDirections = { // Possible directions with specified angle
