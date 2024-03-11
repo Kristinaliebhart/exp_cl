@@ -85,7 +85,7 @@ displayFinishWindow() {
         // Verzögerung einführen, um sicherzustellen, dass die CSV-Datei bereit ist
         setTimeout(() => {
             // Generieren des Download-Links für die CSV-Datei
-            //this.dataRecorder.generateCsvDownloadLink(true);
+            this.dataRecorder.generateCsvDownloadLink(true);
         }, 1000); // Verzögerung von 1000 Millisekunden (1 Sekunde)
     }
 }
