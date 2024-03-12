@@ -15,7 +15,7 @@ class Config {
 
     // Trial Config
     static showLessScreenInformation = true;           // Shows more/less detailed trial/block information on the screen
-    static isTestSet = false;                           // Determines, if test or trainings set will be used for trials
+    static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
     static numBlocksTestSet = 6;                        // Amount of blocks for test set
     static numBlocksTrainingsSet = 2;                   // Amount of blocks for trainings set
     static shuffleTrialsInBlock = true;                 // Determines, if Trials should be shuffled (random position) in the current block
