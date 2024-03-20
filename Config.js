@@ -8,7 +8,7 @@ class Config {
     static ppi = 132.34;       // Determines proper size of elements (so that 1cm equals 1cm on every phone //Laptop: 141.21, Ipad: 264.68
     static shape = "rectangle"; // rectangle or circle (circle not adjusted)
     static intDevice = "touch".toLowerCase(); // Mouse, Touch (when touch enabled, mouseclick will not work) //mouse for laptop or touch
-    static trialsPerBreakTestSet = 36;
+    static trialsPerBreakTestSet = 27;
     static trialsPerBreakPracticeSet = 4;
     static generalUsername = "none"; // Will be displayed in dataset when no username was entered
     static version = "8.4";
@@ -16,7 +16,7 @@ class Config {
     // Trial Config
     static showLessScreenInformation = true;           // Shows more/less detailed trial/block information on the screen
     static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
-    static numBlocksTestSet = 6;                        // Amount of blocks for test set
+    static numBlocksTestSet = 1;                        // Amount of blocks for test set
     static numBlocksTrainingsSet = 2;                   // Amount of blocks for trainings set
     static shuffleTrialsInBlock = true;                 // Determines, if Trials should be shuffled (random position) in the current block
     static startSize = 10;                              // Size of the start element (always AxA)
