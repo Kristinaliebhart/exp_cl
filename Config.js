@@ -40,53 +40,210 @@ class Config {
     static drawToleranceElement = false;            // Draws the Tolerance element
     static showStartWindow = true;                 // Toggles display of start window
 
+
+      static getRandomDirection1() {
+        const directions = ['up', 'up-left', 'up-right', 'down', 'down-right', 'down-left'];
+        return directions[Math.floor(Math.random() * directions.length)];
+    }
+
+    static getRandomDirection2() {
+        const directions = ['right', 'right-up', 'right-down', 'left', 'left-down', 'left-up'];
+        return directions[Math.floor(Math.random() * directions.length)];
+    }
+
+
+    static trialsDataCategoriesTestSet = [];
+    static trialsDataCategoriesTrainingsSet = [];
+  
+
     // Circle: height gets automatically replaced with width
     // Category, targetWidth, targetHeight, Amplitude, trialDirection (e.g. up -> target is above start element)
     // Note: When adding the same Trial Category, the Trials will be treated as the same
     // (e.g. when the first trial got a miss, the counter will be also incremented for the other trial)
-     static trialsDataCategoriesTestSet = [
-       //amplitude 1
-        ["C1", 4, 20, 150, 'right'],
-        ["C2", 15, 6, 150, 'up'],
-        ["C3", 9, 15, 150, 'up-right'],
-        ["C4", 10, 8, 150, 'up'],
-        ["C5", 7, 7, 150, 'right-up'],
-        ["C6", 15, 18, 150, 'up-right'],
-        ["C7", 16, 10, 150, 'right-up'],
-        ["C8", 8, 16, 150, 'right'],
-        ["C9", 24, 10, 150, 'up'],
-        ["C10", 5, 14, 150, 'right'],
-        ["C11", 16, 5, 150, 'right-up'],
-        ["C12", 5, 18, 150, 'right'],
-        //amplitude 2
-        ["C13", 4, 20, 100, 'down-left'],
-        ["C14", 15, 6, 100, 'right-down'],
-        ["C15", 9, 15, 100, 'down-left'],
-        ["C16", 10, 8, 100, 'right-down'],
-        ["C17", 7, 7, 100, 'down-right'],
-        ["C18", 15, 18, 100, 'right-down'],
-        ["C19", 16, 10, 100, 'down'],
-        ["C20", 8, 16, 100, 'down'],
-        ["C21", 24, 10, 100, 'right-down'],
-        ["C22", 5, 14, 100, 'down'],
-        ["C23", 16, 5, 100, 'down-left'],
-        ["C24", 5, 18, 100, 'right-down'],
-        //amplitude 3
-        ["C25", 4, 20, 50, 'left'],
-        ["C26", 15, 6, 50, 'left-up'],
-        ["C3", 9, 15, 50, 'left'],
-        ["C28", 10, 8, 50, 'up-left'],
-        ["C29", 7, 7, 50, 'left'],
-        ["C30", 15, 18, 50, 'left-down'],
-        ["C31", 16, 10, 50, 'left-up'],
-        ["C32", 8, 16, 50, 'up-left'],
-        ["C33", 24, 10, 50, 'left-up'],
-        ["C34", 5, 14, 50, 'left-down'],
-        ["C35", 16, 5, 50, 'up-left'],
-        ["C36", 5, 18, 50, 'left']
+    static trialsDataCategoriesTestSet = [
        
-    ];
+ //1
+["C1", 55, 3, 50,  Config.getRandomDirection1()],
+["C2", 55, 9, 150,  Config.getRandomDirection1()],
+["C3", 55, 15, 150,  Config.getRandomDirection1()],
+["C4", 55, 21, 150,  Config.getRandomDirection1()],
+["C5", 55, 27, 150,  Config.getRandomDirection1()],
+["C6", 55, 33, 150,  Config.getRandomDirection1()],
+["C7", 55, 39, 150,  Config.getRandomDirection1()],
+["C8", 55, 45, 150,  Config.getRandomDirection1()],
+["C9", 55, 51, 150,  Config.getRandomDirection1()],
+["C10", 110, 3, 100,  Config.getRandomDirection1()],
+["C11", 110, 9, 100,  Config.getRandomDirection1()],
+["C12", 110, 15, 100,  Config.getRandomDirection1()],
+["C13", 110, 21, 100,  Config.getRandomDirection1()],
+["C14", 110, 27, 100,  Config.getRandomDirection1()],
+["C15", 110, 33, 100,  Config.getRandomDirection1()],
+["C16", 110, 39, 100,  Config.getRandomDirection1()],
+["C17", 110, 45, 100,  Config.getRandomDirection1()],
+["C18", 110, 51, 100,  Config.getRandomDirection1()],
+["C19", 165, 3, 150,  Config.getRandomDirection1()],
+["C20", 165, 9, 150,  Config.getRandomDirection1()],
+["C21", 165, 15, 150,  Config.getRandomDirection1()],
+["C22", 165, 21, 150,  Config.getRandomDirection1()],
+["C23", 165, 27, 150,  Config.getRandomDirection1()],
+["C24", 165, 33, 150,  Config.getRandomDirection1()],
+["C25", 165, 39, 150,  Config.getRandomDirection1()],
+["C26", 165, 45, 150,  Config.getRandomDirection1()],
+["C27", 165, 51, 150,  Config.getRandomDirection1()],
 
+//2
+["C28", 55, 5, 150,  Config.getRandomDirection1()],
+["C29", 55, 11, 150,  Config.getRandomDirection1()],
+["C30", 55, 17, 150,  Config.getRandomDirection1()],
+["C31", 55, 23, 150, Config.getRandomDirection1()],
+["C32", 55, 29, 150,  Config.getRandomDirection1()],
+["C33", 55, 35, 150,  Config.getRandomDirection1()],
+["C34", 55, 41, 150,  Config.getRandomDirection1()],
+["C35", 55, 47, 150,  Config.getRandomDirection1()],
+["C36", 55, 53, 150,  Config.getRandomDirection1()],
+["C37", 110, 5, 100,  Config.getRandomDirection1()],
+["C38", 110, 11, 100,  Config.getRandomDirection1()],
+["C39", 110, 17, 100,  Config.getRandomDirection1()],
+["C40", 110, 23, 100,  Config.getRandomDirection1()],
+["C41", 110, 29, 100, Config.getRandomDirection1()],
+["C42", 110, 35, 100,  Config.getRandomDirection1()],
+["C43", 110, 41, 100,  Config.getRandomDirection1()],
+["C44", 110, 47, 100,  Config.getRandomDirection1()],
+["C45", 110, 53, 100,  Config.getRandomDirection1()],
+["C46", 165, 5, 150,  Config.getRandomDirection1()],
+["C47", 165, 11, 150,  Config.getRandomDirection1()],
+["C48", 165, 17, 150,  Config.getRandomDirection1()],
+["C49", 165, 23, 150,  Config.getRandomDirection1()],
+["C50", 165, 29, 150,  Config.getRandomDirection1()],
+["C51", 165, 35, 150, Config.getRandomDirection1()],
+["C52", 165, 41, 150,  Config.getRandomDirection1()],
+["C53", 165, 47, 150,  Config.getRandomDirection1()],
+["C54", 165, 53, 150,  Config.getRandomDirection1()],
+
+
+//3
+["C55", 55, 7, 150,  Config.getRandomDirection1()],
+["C56", 55, 13, 150,  Config.getRandomDirection1()],
+["C57", 55, 19, 150,  Config.getRandomDirection1()],
+["C58", 55, 25, 150,  Config.getRandomDirection1()],
+["C59", 55, 31, 150,  Config.getRandomDirection1()],
+["C60", 55, 37, 150,  Config.getRandomDirection1()],
+["C61", 55, 43, 150,  Config.getRandomDirection1()],
+["C62", 55, 49, 150,  Config.getRandomDirection1()],
+["C63", 55, 55, 150,  Config.getRandomDirection1()],
+["C64", 110, 7, 100,  Config.getRandomDirection1()],
+["C65", 110, 13, 100,  Config.getRandomDirection1()],
+["C66", 110, 19, 100,  Config.getRandomDirection1()],
+["C67", 110, 25, 100,  Config.getRandomDirection1()],
+["C68", 110, 31, 100,  Config.getRandomDirection1()],
+["C69", 110, 37, 100,  Config.getRandomDirection1()],
+["C70", 110, 43, 100,  Config.getRandomDirection1()],
+["C71", 110, 49, 100,  Config.getRandomDirection1()],
+["C72", 110, 55, 100,  Config.getRandomDirection1()],
+["C73", 165, 7, 150,  Config.getRandomDirection1()],
+["C74", 165, 13, 150,  Config.getRandomDirection1()],
+["C75", 165, 19, 150,  Config.getRandomDirection1()],
+["C76", 165, 25, 150,  Config.getRandomDirection1()],
+["C77", 165, 31, 150,  Config.getRandomDirection1()],
+["C78", 165, 37, 150,  Config.getRandomDirection1()],
+["C79", 165, 43, 150,  Config.getRandomDirection1()],
+["C80", 165, 49, 150,  Config.getRandomDirection1()],
+["C81", 165, 55, 150,  Config.getRandomDirection1()],
+
+
+//4
+["C82", 55, 3, 150, Config.getRandomDirection2()],
+["C83", 55, 9, 150, Config.getRandomDirection2()],
+["C84", 55, 15, 150, Config.getRandomDirection2()],
+["C85", 55, 21, 150, Config.getRandomDirection2()],
+["C86", 55, 27, 150, Config.getRandomDirection2()],
+["C87", 55, 33, 150, Config.getRandomDirection2()],
+["C88", 55, 39, 150, Config.getRandomDirection2()],
+["C89", 55, 45, 150, Config.getRandomDirection2()],
+["C90", 55, 51, 150, Config.getRandomDirection2()],
+["C91", 110, 3, 100, Config.getRandomDirection2()],
+["C92", 110, 9, 100, Config.getRandomDirection2()],
+["C93", 110, 15, 100, Config.getRandomDirection2()],
+["C94", 110, 21, 100, Config.getRandomDirection2()],
+["C95", 110, 27, 100, Config.getRandomDirection2()],
+["C96", 110, 33, 100, Config.getRandomDirection2()],
+["C97", 110, 39, 100, Config.getRandomDirection2()],
+["C98", 110, 45, 100, Config.getRandomDirection2()],
+["C99", 110, 51, 100, Config.getRandomDirection2()],
+["C100", 165, 3, 150, Config.getRandomDirection2()],
+["C101", 165, 9, 150, Config.getRandomDirection2()],
+["C102", 165, 15, 150, Config.getRandomDirection2()],
+["C103", 165, 21, 150, Config.getRandomDirection2()],
+["C104", 165, 27, 150, Config.getRandomDirection2()],
+["C105", 165, 33, 150,Config.getRandomDirection2()],
+["C106", 165, 39, 150, Config.getRandomDirection2()],
+["C107", 165, 45, 150, Config.getRandomDirection2()],
+["C108", 165, 51, 150, Config.getRandomDirection2()],
+
+
+//5
+["C109", 55, 5, 150, Config.getRandomDirection2()],
+["C110", 55, 11, 150, Config.getRandomDirection2()],
+["C111", 55, 17, 150, Config.getRandomDirection2()],
+["C112", 55, 23, 150, Config.getRandomDirection2()],
+["C113", 55, 29, 150, Config.getRandomDirection2()],
+["C114", 55, 35, 150, Config.getRandomDirection2()],
+["C115", 55, 41, 150, Config.getRandomDirection2()],
+["C116", 55, 47, 150, Config.getRandomDirection2()],
+["C117", 55, 53, 150, Config.getRandomDirection2()],
+["C118", 110, 5, 100, Config.getRandomDirection2()],
+["C119", 110, 11, 100, Config.getRandomDirection2()],
+["C120", 110, 17, 100, Config.getRandomDirection2()],
+["C121", 110, 23, 100, Config.getRandomDirection2()],
+["C122", 110, 29, 100, Config.getRandomDirection2()],
+["C123", 110, 35, 100, Config.getRandomDirection2()],
+["C124", 110, 41, 100, Config.getRandomDirection2()],
+["C125", 110, 47, 100, Config.getRandomDirection2()],
+["C126", 110, 53, 100, Config.getRandomDirection2()],
+["C127", 165, 5, 150, Config.getRandomDirection2()],
+["C128", 165, 11, 150, Config.getRandomDirection2()],
+["C129", 165, 17, 150, Config.getRandomDirection2()],
+["C130", 165, 23, 150, Config.getRandomDirection2()],
+["C131", 165, 29, 150, Config.getRandomDirection2()],
+["C132", 165, 35, 150, Config.getRandomDirection2()],
+["C133", 165, 41, 150, Config.getRandomDirection2()],
+["C134", 165, 47, 150, Config.getRandomDirection2()],
+["C135", 165, 53, 150, Config.getRandomDirection2()],
+
+
+//6
+
+
+["C136", 55, 7, 150, Config.getRandomDirection2()],
+["C137", 55, 13, 150, Config.getRandomDirection2()],
+["C138", 55, 19, 150, Config.getRandomDirection2()],
+["C139", 55, 25, 150, Config.getRandomDirection2()],
+["C140", 55, 31, 150, Config.getRandomDirection2()],
+["C141", 55, 37, 150, Config.getRandomDirection2()],
+["C142", 55, 43, 150, Config.getRandomDirection2()],
+["C143", 55, 49, 150, Config.getRandomDirection2()],
+["C144", 55, 55, 150, Config.getRandomDirection2()],
+["C145", 110, 7, 100, Config.getRandomDirection2()],
+["C146", 110, 13, 100, Config.getRandomDirection2()],
+["C147", 110, 19, 100, Config.getRandomDirection2()],
+["C148", 110, 25, 100, Config.getRandomDirection2()],
+["C149", 110, 31, 100, Config.getRandomDirection2()],
+["C150", 110, 37, 100, Config.getRandomDirection2()],
+["C151", 110, 43, 100, Config.getRandomDirection2()],
+["C152", 110, 49, 100, Config.getRandomDirection2()],
+["C153", 110, 55, 100, Config.getRandomDirection2()],
+["C154", 165, 7, 150, Config.getRandomDirection2()],
+["C155", 165, 13, 150, Config.getRandomDirection2()],
+["C156", 165, 19, 150, Config.getRandomDirection2()],
+["C157", 165, 25, 150, Config.getRandomDirection2()],
+["C158", 165, 31, 150, Config.getRandomDirection2()],
+["C159", 165, 37, 150, Config.getRandomDirection2()],
+["C160", 165, 43, 150, Config.getRandomDirection2()],
+["C161", 165, 49, 150, Config.getRandomDirection2()],
+["C162", 165, 55, 150, Config.getRandomDirection2()],
+     ];
+ 
+ 
     static trialsDataCategoriesTrainingsSet = [
         ["C1", 4, 20, 150, 'right'],
         ["C34", 5, 14, 50, 'left-down'],
