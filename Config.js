@@ -41,13 +41,15 @@ class Config {
     static showStartWindow = true;                 // Toggles display of start window
 
 
-      static getRandomDirection1() {
-        const directions = ['up', 'up-left', 'up-right', 'down', 'down-right', 'down-left'];
+    static getRandomDirection1() {
+       // const directions = ['up', 'up-left', 'up-right', 'down', 'down-right', 'down-left'];
+       const directions = ['up','down'];
         return directions[Math.floor(Math.random() * directions.length)];
     }
 
     static getRandomDirection2() {
-        const directions = ['right', 'right-up', 'right-down', 'left', 'left-down', 'left-up'];
+       // const directions = ['right', 'right-up', 'right-down', 'left', 'left-down', 'left-up'];
+       const directions = ['right', 'left-up'];
         return directions[Math.floor(Math.random() * directions.length)];
     }
 
