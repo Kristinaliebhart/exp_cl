@@ -63,35 +63,37 @@ class Config {
     static trialsDataCategoriesTestSet = [
        
  //1
-["C1", 3, 3, 55,  Config.getRandomDirection1()],
-["C2", 9, 3, 55,  Config.getRandomDirection1()],
-["C3", 15, 3, 55,  Config.getRandomDirection1()],
-["C4", 21, 3, 55,  Config.getRandomDirection1()],
-["C5", 27, 3, 55,  Config.getRandomDirection1()],
-["C6", 33, 3, 55,  Config.getRandomDirection1()],
-["C7", 39, 3, 55,  Config.getRandomDirection1()],
-["C8", 45, 3, 55,  Config.getRandomDirection1()],
-["C9", 51, 3, 55,  Config.getRandomDirection1()],
-["C10", 3, 3, 110,  Config.getRandomDirection1()],
-["C11", 9, 3, 110,  Config.getRandomDirection1()],
-["C12", 15, 3, 110,  Config.getRandomDirection1()],
-["C13", 21, 3, 110,  Config.getRandomDirection1()],
-["C14", 27, 3, 110,  Config.getRandomDirection1()],
-["C15", 33, 3, 110,  Config.getRandomDirection1()],
-["C16", 39, 3, 110,  Config.getRandomDirection1()],
-["C17", 45, 3, 110,  Config.getRandomDirection1()],
-["C18", 51, 3, 110,  Config.getRandomDirection1()],
-["C19", 3, 3, 165,  Config.getRandomDirection1()],
-["C20", 9, 3, 165,  Config.getRandomDirection1()],
-["C21", 15, 3, 165,  Config.getRandomDirection1()],
-["C22", 21, 3, 165,  Config.getRandomDirection1()],
-["C23", 27, 3, 165,  Config.getRandomDirection1()],
-["C24", 33, 3, 165,  Config.getRandomDirection1()],
-["C25", 39, 3, 165,  Config.getRandomDirection1()],
-["C26", 45, 3, 165,  Config.getRandomDirection1()],
-["C27", 51, 3, 165,  Config.getRandomDirection1()],
+["C1", 3, 3, 60,  Config.getRandomDirection1()],
+["C2", 9, 3, 60,  Config.getRandomDirection1()],
+["C3", 15, 3, 60,  Config.getRandomDirection1()],
+["C4", 21, 3, 60,  Config.getRandomDirection1()],
+["C5", 27, 3, 60,  Config.getRandomDirection1()],
+["C6", 33, 3, 60,  Config.getRandomDirection1()],
+["C7", 39, 3, 60,  Config.getRandomDirection1()],
+["C8", 45, 3, 60,  Config.getRandomDirection1()],
+["C9", 51, 3, 60,  Config.getRandomDirection1()],
+["C10", 3, 3, 100,  Config.getRandomDirection1()],
+["C11", 9, 3, 100,  Config.getRandomDirection1()],
+["C12", 15, 3, 100,  Config.getRandomDirection1()],
+["C13", 21, 3, 100,  Config.getRandomDirection1()],
+["C14", 27, 3, 100,  Config.getRandomDirection1()],
+["C15", 33, 3, 100,  Config.getRandomDirection1()],
+["C16", 39, 3, 100,  Config.getRandomDirection1()],
+["C17", 45, 3, 100,  Config.getRandomDirection1()],
+["C18", 51, 3, 100,  Config.getRandomDirection1()],
+["C19", 3, 3, 140,  Config.getRandomDirection1()],
+["C20", 9, 3, 140,  Config.getRandomDirection1()],
+["C21", 15, 3, 140,  Config.getRandomDirection1()],
+["C22", 21, 3, 140,  Config.getRandomDirection1()],
+["C23", 27, 3, 140,  Config.getRandomDirection1()],
+["C24", 33, 3, 140,  Config.getRandomDirection1()],
+["C25", 39, 3, 140,  Config.getRandomDirection1()],
+["C26", 45, 3, 140,  Config.getRandomDirection1()],
+["C27", 51, 3, 140,  Config.getRandomDirection1()],
 
 //2
+
+/*
 ["C28", 5, 5, 55,  Config.getRandomDirection1()],
 ["C29", 11, 5, 55,  Config.getRandomDirection1()],
 ["C30", 17, 5, 55,  Config.getRandomDirection1()],
@@ -241,6 +243,8 @@ class Config {
 ["C160", 7, 43, 165, Config.getRandomDirection2()],
 ["C161", 7, 49, 165, Config.getRandomDirection2()],
 ["C162", 7, 55, 165, Config.getRandomDirection2()],
+
+*/
      ];
  
  
