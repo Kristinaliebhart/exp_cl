@@ -13,9 +13,14 @@ class Config {
     static generalUsername = "none"; // Will be displayed in dataset when no username was entered
     static version = "8.4";
 
+
+     //TODO: change for studie:
+    static run = "1";                                   //1-6 or 1-3
+    static input_device = "Finger"                      //Finger or Touch
+    static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
+
     // Trial Config
     static showLessScreenInformation = true;           // Shows more/less detailed trial/block information on the screen
-    static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
     static numBlocksTestSet = 1;                        // Amount of blocks for test set
     static numBlocksTrainingsSet = 2;                   // Amount of blocks for trainings set
     static shuffleTrialsInBlock = true;                 // Determines, if Trials should be shuffled (random position) in the current block
