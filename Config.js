@@ -75,7 +75,9 @@ class Config {
 ["C3", 15, 3, 60,  Config.getRandomDirection1()],
 ["C4", 21, 3, 60,  Config.getRandomDirection1()],
 ["C5", 27, 3, 60,  Config.getRandomDirection1()],
-["C6", 33, 3, 60,  Config.getRandomDirection1()],
+
+        /*
+        ["C6", 33, 3, 60,  Config.getRandomDirection1()],
 ["C7", 39, 3, 60,  Config.getRandomDirection1()],
 ["C8", 45, 3, 60,  Config.getRandomDirection1()],
 ["C9", 51, 3, 60,  Config.getRandomDirection1()],
@@ -250,7 +252,7 @@ class Config {
 ["C160", 7, 43, 140, Config.getRandomDirection2()],
 ["C161", 7, 49, 140, Config.getRandomDirection2()],
 ["C162", 7, 55, 140, Config.getRandomDirection2()],
-
+*/
 
      ];
  
