@@ -7,7 +7,7 @@ class Config {
     // PPI cannot be determined by plain javascript
     static ppi = 132.34;       // Determines proper size of elements (so that 1cm equals 1cm on every phone //Laptop: 141.21, Ipad: 132.34
     static shape = "rectangle"; // rectangle or circle (circle not adjusted)
-    static intDevice = "mouse".toLowerCase(); // Mouse, Touch (when touch enabled, mouseclick will not work) //mouse for laptop or touch
+    static intDevice = "touch".toLowerCase(); // Mouse, Touch (when touch enabled, mouseclick will not work) //mouse for laptop or touch
     static trialsPerBreakTestSet = 27;
     static trialsPerBreakPracticeSet = 4;
     static generalUsername = "none"; // Will be displayed in dataset when no username was entered
@@ -99,7 +99,7 @@ class Config {
 
 //2
 
-
+/*
 ["C28", 5, 5, 60,  Config.getRandomDirection1()],
 ["C29", 11, 5, 60,  Config.getRandomDirection1()],
 ["C30", 17, 5, 60,  Config.getRandomDirection1()],
@@ -249,7 +249,7 @@ class Config {
 ["C160", 7, 43, 140, Config.getRandomDirection2()],
 ["C161", 7, 49, 140, Config.getRandomDirection2()],
 ["C162", 7, 55, 140, Config.getRandomDirection2()],
-
+*/
 
      ];
  
