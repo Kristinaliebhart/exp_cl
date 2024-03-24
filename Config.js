@@ -99,7 +99,7 @@ class Config {
 
 //2
 
-/*
+
 ["C28", 5, 5, 60,  Config.getRandomDirection1()],
 ["C29", 11, 5, 60,  Config.getRandomDirection1()],
 ["C30", 17, 5, 60,  Config.getRandomDirection1()],
@@ -249,7 +249,7 @@ class Config {
 ["C160", 7, 43, 140, Config.getRandomDirection2()],
 ["C161", 7, 49, 140, Config.getRandomDirection2()],
 ["C162", 7, 55, 140, Config.getRandomDirection2()],
-*/
+
 
      ];
  
