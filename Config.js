@@ -44,7 +44,7 @@ class Config {
     static drawToleranceElement = false;            // Draws the Tolerance element
     static showStartWindow = true;                 // Toggles display of start window
 
-
+/*
     static getRandomDirection1() {
        // const directions = ['up', 'up-left', 'up-right', 'down', 'down-right', 'down-left'];
        const directions = ['up','down'];
@@ -56,7 +56,18 @@ class Config {
        const directions = ['right', 'left'];
         return directions[Math.floor(Math.random() * directions.length)];
     }
+    */
 
+     static getRandomDirection1() {
+        // Zufällige Auswahl zwischen "up" und "down"
+        return Math.random() < 0.5 ? 'up' : 'down';
+    }
+
+    // Ergänze die Klasse um die getRandomDirection2 Methode
+    static getRandomDirection2() {
+        // Zufällige Auswahl zwischen "left" und "right"
+        return Math.random() < 0.5 ? 'left' : 'right';
+    }
 
     static trialsDataCategoriesTestSet = [];
     static trialsDataCategoriesTrainingsSet = [];
