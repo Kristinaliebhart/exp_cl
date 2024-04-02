@@ -80,7 +80,7 @@ class Config {
     static trialsDataCategoriesTestSet = [
        
  //1
-["C1", 3, 3, 60,  'downz'],
+["C1", 3, 3, 60,  'down'],
 ["C2", 9, 3, 60, 'up'],
 ["C3", 15, 3, 60, 'up'],
 ["C4", 21, 3, 60,  'down'],
