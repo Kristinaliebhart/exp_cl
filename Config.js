@@ -79,7 +79,7 @@ class Config {
     // (e.g. when the first trial got a miss, the counter will be also incremented for the other trial)
     static trialsDataCategoriesTestSet = [
 
-/1
+//1
 ["C1", 3, 3, 60,  'up'],
 ["C2", 9, 3, 60, 'down'],
 ["C3", 15, 3, 60, 'down'],
