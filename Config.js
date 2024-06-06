@@ -15,8 +15,8 @@ class Config {
 
 
      //TODO : change for study
-    static run = "2";                                   //1-6 or 1-3
-    static input_device = "Stylus"                      //Finger or Stylus
+    static run = "3";                                   //1-6 or 1-3
+    static input_device = "Finger"                      //Finger or Stylus
     static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
 
     // Trial Config
@@ -233,7 +233,7 @@ class Config {
 //6
 
 
-["C136", 7, 7, 60, 'right'],
+["C136", 7, 7, 60, 'left'],
 ["C137", 7, 13, 60,'left'],
 ["C138", 7, 19, 60, 'left'],
 ["C139", 7, 25, 60, 'right'],
@@ -256,7 +256,7 @@ class Config {
 ["C156", 7, 19, 140, 'right'],
 ["C157", 7, 25, 140, 'right'],
 ["C158", 7, 31, 140, 'left'],
-["C159", 7, 37, 140, 'right'],
+["C159", 7, 37, 140, 'left'],
 ["C160", 7, 43, 140, 'left'],
 ["C161", 7, 49, 140,'right'],
 ["C162", 7, 55, 140,'left'],
