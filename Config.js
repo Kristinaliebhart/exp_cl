@@ -16,7 +16,7 @@ class Config {
 
      //TODO : change for study
     static run = "3";                                   // 1-3
-    static input_device = "Stylus"                      //Finger or Stylus
+    static input_device = "Finger"                      //Finger or Stylus
     static isTestSet = true;                           // Determines, if test or trainings set will be used for trials
 
     // Trial Config
